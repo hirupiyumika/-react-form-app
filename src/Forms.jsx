@@ -36,15 +36,19 @@ class Forms extends Component {
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group>
                         <Form.Label>Username</Form.Label>
-                        <Form.Control type="text" placeholder="Enter username"  value={this.state.username} onChange={this.handleUsernameChange}/>
+                        <Form.Control type="text" placeholder="Enter username"  
+                            value={this.state.username} 
+                            onChange={this.handleUsernameChange}/>
                         <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
+                        We'll never share your details with anyone else.
                         </Form.Text>
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+                        <Form.Control type="password" placeholder="Password" 
+                            value={this.state.password} 
+                            onChange={this.handlePasswordChange}/>
                     </Form.Group>
                     
                     <Button variant="primary" type="submit">
